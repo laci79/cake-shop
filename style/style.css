@@ -1,0 +1,179 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------- Header rules -----------*/
+
+header {
+    width: 100%;
+    min-height: 30px;
+    background-color: orange;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.header-navigation-links-wrapper {
+    text-align: center;
+    align-items: center;
+}
+
+.navbar-collapse .header-navigation-link:nth-child(1):after,
+.navbar-collapse .header-navigation-link:nth-child(2):after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 8rem;
+    margin: .5rem auto;
+}
+
+.header-navigation-link {
+    padding: 0 2vw;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Carattere', cursive;
+    font-weight: bold;
+    color: white;
+    font-size: 1.9rem;
+    text-decoration: none;
+    padding-top: 0.3rem;
+    margin-right: 4vw;
+}
+
+
+/* ----------  Tablet -----------------*/
+
+@media only screen and (min-width: 576px) {
+
+    .header-navigation {
+        display: flex;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-navigation-links-wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar-collapse .header-navigation-link:nth-child(1):after,
+    .navbar-collapse .header-navigation-link:nth-child(2):after {
+        display: none;
+    }
+
+}
+
+
+/* -----  Main section --------------*/
+
+.section-list-container {
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.section-list-container-card {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid lightgray;
+    margin: 2% auto;
+    box-shadow: 0.1rem 0.25rem 0.25rem rgba(30, 30, 30, 0.3);
+}
+
+.section-list-container-card img {
+    width: 90%;
+    margin: 1% auto;
+    display: block;
+}
+
+.section-card-textarea {
+    text-align: center;
+}
+
+/* --------  Tablet  -----------------------*/
+
+@media only screen and (min-width: 576px) {
+    .section-list-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section-list-container-card {
+        width: 45%;
+    }
+}
+
+/* ------ Desktop -----------------*/
+
+@media only screen and (min-width: 1000px) {
+    .section-list-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section-list-container-card {
+        width: 28%;
+    }
+}
+
+
+/*  ----------  Extra large -----------------*/
+
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0 10%;
+    }
+
+}
+
+/* -------  Footer ---------------*/
+
+footer {
+    width: 100%;
+    min-height: 60px;
+    background: #FF6600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------- Third page ---------------- */
+
+.contact-info {
+    display: flex;
+    margin: 20px;
+}
+.opening-hours {
+    margin: 40px 60px;
+}
+
+
+/* ---------  Google maps -------------- */
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
